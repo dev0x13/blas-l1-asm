@@ -1,7 +1,7 @@
 #include "common.h"
 
 void cblas_srot(const int N, float *X, const int incX, float *Y, const int incY,
-          const float c, const float s) {
+                const float c, const float s) {
   int i;
   int ix = OFFSET(N, incX);
   int iy = OFFSET(N, incY);

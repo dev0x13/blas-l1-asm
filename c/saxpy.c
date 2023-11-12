@@ -1,7 +1,7 @@
 #include "common.h"
 
 void cblas_saxpy(const int N, const float alpha, const float *X, const int incX,
-           float *Y, const int incY) {
+                 float *Y, const int incY) {
   int i;
 
   if (alpha == 0.0) {

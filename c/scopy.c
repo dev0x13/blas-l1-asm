@@ -1,7 +1,7 @@
 #include "common.h"
 
 void cblas_scopy(const int N, const float *X, const int incX, float *Y,
-           const int incY) {
+                 const int incY) {
   int i;
   int ix = OFFSET(N, incX);
   int iy = OFFSET(N, incY);

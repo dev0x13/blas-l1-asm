@@ -1,7 +1,7 @@
 #include "common.h"
 
-float cblas_sdsdot(const int N, const float alpha, const float *X, const int incX,
-             const float *Y, const int incY) {
+float cblas_sdsdot(const int N, const float alpha, const float *X,
+                   const int incX, const float *Y, const int incY) {
   double r = alpha;
   int i;
   int ix = OFFSET(N, incX);

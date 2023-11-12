@@ -1,7 +1,7 @@
 #include "common.h"
 
-void cblas_srotm(const int N, float *X, const int incX, float *Y, const int incY,
-           const float *P) {
+void cblas_srotm(const int N, float *X, const int incX, float *Y,
+                 const int incY, const float *P) {
   int n;
   int i = OFFSET(N, incX);
   int j = OFFSET(N, incY);

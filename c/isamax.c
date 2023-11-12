@@ -1,6 +1,6 @@
 #include "math.h"
 
-int cblas_isamax(const int N, const float  *X, const int incX) {
+int cblas_isamax(const int N, const float *X, const int incX) {
   float max = 0.0;
   int ix = 0;
   int i;
