@@ -6,8 +6,7 @@ void cblas_srotm(const int N, float *X, const int incX, float *Y,
                  const int incY, const float *P);
 void cblas_sswap(const int N, float *X, const int incX, float *Y,
                  const int incY);
-extern void cblas_sscal(const int N, const float alpha, float *X,
-                        const int incX);
+void cblas_sscal(const int N, const float alpha, float *X, const int incX);
 void cblas_scopy(const int N, const float *X, const int incX, float *Y,
                  const int incY);
 void cblas_saxpy(const int N, const float alpha, const float *X, const int incX,

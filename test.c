@@ -25,5 +25,14 @@ int main() {
   int r1 = cblas_isamax(N, X, 1);
   printf("%d\n", r1);
 
+  // scopy
+
+  float Y[] = {1, 2, 3, 4, 5, 6};
+  cblas_scopy(N, X, 1, Y, 1);
+  for (int i = 0; i < N; ++i) {
+    printf("%.2f %.2f, ", X[i], Y[i]);
+  }
+  printf("\n");
+
   return 0;
 }

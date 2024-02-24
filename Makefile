@@ -2,7 +2,7 @@ OBJECTS_C = $(patsubst %.c,%.o,$(wildcard c/*.c))
 OBJECTS_ASM = $(patsubst %.nasm,%.o,$(wildcard asm/*.nasm))
 
 c/%.o: c/%.c
-	gcc -O -c $< -o $@
+	gcc -c $< -o $@
 
 asm/%.o: asm/%.nasm
 	nasm -felf64 $< -o $@
@@ -14,7 +14,7 @@ blas_l1_c.a: $(OBJECTS_C)
 	ar rcs $@ $^
 
 test.o: test.c
-	gcc -O -c test.c -o test.o
+	gcc -c test.c -o test.o
 
 test_c: blas_l1_c.a test.o
 	gcc -o test_c test.o blas_l1_c.a

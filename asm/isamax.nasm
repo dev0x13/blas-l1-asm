@@ -31,7 +31,7 @@ cblas_isamax:
     comiss  xmm1, xmm0  ; if (abs_x > max)
     ja      .updmax
 
-.inccnt
+.inccnt:
     add rsi, rax      ; ix += incX
     inc ecx           ; i++
     jmp .cond
